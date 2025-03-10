@@ -7,7 +7,7 @@ include(FetchContent)
 FetchContent_Declare(
   block
   GIT_REPOSITORY https://github.com/nicolasfella/gr4-blocklib-build-concept.git
-  GIT_TAG        stuff
+  GIT_TAG        rework
 )
 
 FetchContent_MakeAvailable(block)

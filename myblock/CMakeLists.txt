@@ -9,6 +9,6 @@ file(GLOB MY_MATH_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
 add_library(myBlock SHARED ${MY_MATH_SRCS})
 
-gr_generate_block_instantiations(myBlock HEADERS ${MY_HEADERS})
+gr_generate_block_instantiations(myBlock HEADERS ${MY_HEADERS} SPLIT_BLOCK_INSTANTIATIONS)
 
 set_target_properties(myBlock PROPERTIES CXX_STANDARD 23)
